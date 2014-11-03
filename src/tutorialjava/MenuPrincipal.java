@@ -9,6 +9,7 @@ import java.util.Scanner;
 import tutorialjava.Ejemplosclases.CambioMonedas;
 import tutorialjava.Ejemplosclases.DiasdelMes;
 import tutorialjava.Ejemplosclases.Factorial;
+import tutorialjava.schoolwork.ControlStructures;
 
 /**
  *
@@ -21,7 +22,10 @@ public class MenuPrincipal {
         System.out.println(">>>>1 - Cambio de Monedas<<<<");
         System.out.println(">>>>2 - Dias que tiene un mes");
         System.out.println(">>>>3 - Factorial");
-        
+        System.out.println("------------------------------");
+        System.out.println("------------------------------");
+        System.out.println(">>>>Escoja un ejercicio<<<<");
+        System.out.println(">>>>4 - Suma y promedio con estructura de control<<<<");
     
     }
     //Metodo para lanzar programa que se escoja
@@ -65,7 +69,17 @@ public class MenuPrincipal {
                 teclado.nextLine();
                 MostrarMenu();
                 ValidarMenu();
-                break;    
+                break;
+            case 4:
+                System.out.println(">>>>Inserte 10 numeros para calcular su promedio y suma total<<<<<");
+                //System.out.println("Introduzca el numero para calcular factorial: ");
+                ControlStructures prog=new ControlStructures();
+                prog.Calculo();
+                teclado.nextLine();
+                teclado.nextLine();
+                MostrarMenu();
+                ValidarMenu();
+                break;
             default:
                 System.out.println("Escojer una opcion valida");
                 System.out.println(">>>>  Presione cualquier tecla para continuar: <<<<<");

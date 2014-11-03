@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 package tutorialjava;
-import tutorialjava.Ejemplosclases.*;
-import tutorialjava.clases.*;
-import java.util.Scanner;
+
+
+
 
 
 /**
