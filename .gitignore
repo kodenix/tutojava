@@ -1,0 +1,16 @@
+#java specific
+*.class
+
+#netbeans ignore personal stuff
+nbproject/
+dist/
+build.xml
+build/
+manifest.mf
+
+#Package files 
+
+*.jar
+*.war
+*.ear
+*.exe
