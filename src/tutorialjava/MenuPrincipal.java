@@ -5,6 +5,7 @@
  */
 package tutorialjava;
 
+import java.io.IOException;
 import java.util.Scanner;
 import tutorialjava.Ejemplosclases.CambioMonedas;
 import tutorialjava.Ejemplosclases.DiasdelMes;
@@ -71,12 +72,19 @@ public class MenuPrincipal {
                 ValidarMenu();
                 break;
             case 4:
-                System.out.println(">>>>Inserte 10 numeros para calcular su promedio y la suma total de los mismos<<<<<");
-                //System.out.println("Introduzca el numero para calcular factorial: ");
+                System.out.println(">>>>Programa que calcula la suma y el promedio de 10 numeros ingresados por teclado, para realizar el programa se empleó la extructura for.<<<<<");
                 ControlStructures prog=new ControlStructures();
                 prog.setNumbers();
                 System.out.println("La suma de los 10 números es igual a: "+prog.ReturnAddNumbers());
-                System.out.println("El promedio de la suma de los 10 numeros es: "+prog.ReturnAverage()); 
+                System.out.println("El promedio de la suma de los 10 numeros es: "+prog.ReturnAverage());
+                System.out.println(">>>>  Presione cualquier tecla para continuar: <<<<<");
+                try {
+                    String a="clear";
+                    Runtime.getRuntime().exec(a);
+                }
+                catch (IOException ioe){
+                    System.out.println(ioe);
+                }
                 teclado.nextLine();
                 teclado.nextLine();
                 MostrarMenu();

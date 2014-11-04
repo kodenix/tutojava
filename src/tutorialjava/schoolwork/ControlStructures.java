@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class ControlStructures {
     
-    private int[] numeros=new int[10];
+    private static final int[] numeros=new int[10];
     private int suma=0;
   //Guardamos los numeros             
     public void setNumbers(){
