@@ -13,23 +13,38 @@ import java.util.Scanner;
 public class ControlStructures {
     
     private int[] numeros=new int[10];
-    
-    public void Calculo(){
-        int i=0;
-        int e=0;
-        int suma=0;
+    private int suma=0;
+  //Guardamos los numeros             
+    public void setNumbers(){
+        int i;
         Scanner teclado=new Scanner(System.in);
         
         for (i=0;i<10;i++){
-           System.out.println("Ingrese el numero"+(i+1));
+           System.out.println("Ingrese el numero "+(i+1)+":");
            numeros[i]=teclado.nextInt();
             
         }
         
-        for (e=0;e<10;e++){
-            suma=suma+numeros[e]; 
-        }
-        System.out.println("la suma es "+suma);
+        
     }
+    
+    //metodo que devuelve la suma de todos los numeros agregados
+    public int ReturnAddNumbers(){
+        int i;
+        
+        for (i=0;i<10;i++){
+            suma=suma+numeros[i]; 
+        }
+        
+        return suma;
+    
+    }
+    
+    public int ReturnAverage(){
+        int promedio;
+        promedio=suma/10;
+        return promedio;
+    
+     }
     
 }

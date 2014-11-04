@@ -71,10 +71,12 @@ public class MenuPrincipal {
                 ValidarMenu();
                 break;
             case 4:
-                System.out.println(">>>>Inserte 10 numeros para calcular su promedio y suma total<<<<<");
+                System.out.println(">>>>Inserte 10 numeros para calcular su promedio y la suma total de los mismos<<<<<");
                 //System.out.println("Introduzca el numero para calcular factorial: ");
                 ControlStructures prog=new ControlStructures();
-                prog.Calculo();
+                prog.setNumbers();
+                System.out.println("La suma de los 10 números es igual a: "+prog.ReturnAddNumbers());
+                System.out.println("El promedio de la suma de los 10 numeros es: "+prog.ReturnAverage()); 
                 teclado.nextLine();
                 teclado.nextLine();
                 MostrarMenu();
